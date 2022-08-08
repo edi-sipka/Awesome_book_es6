@@ -4,91 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="index.css" />
-    <title>Awesome Books</title>
+    <title>Awsome-Books</title>
   </head>
 
   <body>
-    <header>
-      <nav class="nav-bar">
-        <img src="images/awesome-logo.svg" alt="Logo" />
-        <div class="nav-list">
-          <a class="list-page" href="#">List</a>
-          |
-          <a class="add-page" href="#">Add New</a>
-          |
-          <a class="contact-page" href="#">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="container-time">
+    <nav class="nav-bar">
       <div>
-        <p id="date" class="date">Time</p>
+        <p>Awesome Books</p>
       </div>
-    </div>
+      <div class="nav-pages">
+        <a class="first" href="#">List</a>
+        <a class="second" href="#">Add new</a>
+        <a class="third" href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="date"></div>
+    <section class="bookDisplay">
+      <div class="header">
+        <h1>All awesome books</h1>
+      </div>
+      <div class="displayBook">
+        <div class="bookList"></div>
+      </div>
+    </section>
 
-    <div class="container">
-      <section class="book-list">
-        <h1>All Awesome Books</h1>
-        <div class="collection"></div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="add-books">
-        <h1>Add A New Book</h1>
-        <form action="#" name="bookForm" class="form" method="post">
+    <section class="bookAdding">
+      <form>
+        <h2>Add a new book</h2>
+        <div>
           <input
-            id="bookTitle"
+            class="input"
+            id="title"
+            name="title"
             type="text"
             placeholder="Title"
-            class="title"
-            name="bookTitle"
-            required
           />
+        </div>
+        <br />
+        <div>
           <input
-            id="bookAuthor"
+            class="input"
+            id="author"
+            name="author"
             type="text"
             placeholder="Author"
-            class="author"
-            required
           />
-          <button id="add-btn" type="button" class="add-button">Add</button>
-        </form>
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="contact">
-        <h1>Contact us</h1>
-        <div class="contact-text">
-          <h2>
-            If you have any questions please contact us. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Dolorem, dignissimos. Porro dolor
-            ipsam ratione tempore iste, enim culpa laudantium nihil quia quidem!
-            Quia harum, fuga deleniti esse neque mollitia alias?
-          </h2>
-          <br />
-          <h3>You can reach us on:</h3>
-          <ul>
-            <li>Our email: <a href="#">mail@mail.com</a></li>
-            <li>Our twitter: <a href="#">@awesomeBooks</a></li>
-            <li>Our github: <a href="#">@awesomeBooks</a></li>
-          </ul>
         </div>
-      </section>
-    </div>
-    <footer class="footer">
-      <p>© 2022 Awesome Books, Inc. All right reserved.</p>
-    </footer>
+        <br />
+        <button id="addButton" class="submit" type="submit">Add</button>
+      </form>
+    </section>
 
-    <script src="index.js" type="module"></script>
+    <section class="contact">
+      <h2>Contact information</h2>
+      <div>
+        <p>Do you hve any question or you just wana say *Hello*?</p>
+        <p>You can reach out to us!</p>
+      </div>
+      <ul>
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 065145369515</li>
+        <li>Our adress: StreetHollyoud 22.03 City.USA</li>
+      </ul>
+    </section>
+
+    <footer class="copyright">
+      <p>copyright</p>
+    </footer>
+    <script type="module" src="./modules/library.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

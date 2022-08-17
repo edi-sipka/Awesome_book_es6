@@ -43,6 +43,9 @@ to use the project Awesome_book_es6 please follow :
 
 \_use you preferd browser to run the file .html to get project website.
 
+## Live version: 
+
+[Check it here](https://edi-sipka.github.io/Awesome_book_es6/)
 ## Authors
 
 👤 **Edi Sipka**
